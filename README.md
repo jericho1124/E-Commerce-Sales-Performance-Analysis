@@ -124,5 +124,5 @@ Snowflake schema with `olist_order_items` as the central fact table.
 ## Notes on Data Quality
 - 2016 data covers only September to December (partial year, excluded from YoY comparisons)
 - 2018 data ends in August (partial year)
-- ~800 orders have payments but no matching review, handled with IFERROR in Excel and subquery isolation in SQL
+- ~800 orders have payments but no matching review, handled with IFERROR in Excel.
 - Delivery status calculated using date comparison only (time component excluded for fairness)
