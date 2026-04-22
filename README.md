@@ -1,19 +1,19 @@
 # Olist E-Commerce Sales Performance Analysis
 
-A end-to-end data analytics project analyzing 96,478 orders from a real Brazilian e-commerce platform using Excel, SQL, and Power BI.
+An end-to-end data analytics project analyzing 96,478 orders from a real Brazilian e-commerce platform using Excel, SQL, and Power BI.
 
 ---
 
 ## Tools Used
-- **Excel** — data exploration and pivot table analysis
-- **SQL (PostgreSQL / pgAdmin)** — data cleaning, joining 8 tables, and analytical queries
-- **Power BI** — interactive 2-page dashboard
+- **Excel** - data exploration and pivot table analysis
+- **SQL (PostgreSQL / pgAdmin)** - data cleaning, joining 8 tables, and analytical queries
+- **Power BI** - interactive 2-page dashboard
 
 ---
 
 ## Dataset
 - Source: [Olist Brazilian E-Commerce Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (Kaggle)
-- 9 CSV files | 96,478 delivered orders | 2016–2018
+- 9 CSV files | 96,478 delivered orders | 2016-2018
 - Tables: orders, order items, payments, reviews, customers, products, sellers, geolocation, category translation
 
 ---
@@ -36,34 +36,34 @@ A end-to-end data analytics project analyzing 96,478 orders from a real Brazilia
 - Total revenue: $13.2M across 96,478 delivered orders
 - Average order value: $137.04
 - Revenue grew 21.1% from 2017 to 2018 (note: 2018 data ends in August)
-- November 2017 shows a significant spike — likely driven by Black Friday
+- November 2017 shows a significant spike, likely driven by Black Friday
 
 **Geography**
-- São Paulo accounts for 38% of total revenue
+- Sao Paulo accounts for 38% of total revenue
 - SP, RJ, and MG together generate 63% of all revenue
-- São Paulo has the fastest average delivery at ~9 days
+- Sao Paulo has the fastest average delivery at ~9 days
 
 **Categories**
 - Health & Beauty is the top revenue category at $1.23M
 - Watches & Gifts and Bed, Bath & Table follow closely
-- Technology products do not dominate — unusual for e-commerce
+- Technology products do not dominate, which is unusual for e-commerce
 
 **Payments**
 - 74% of orders paid by credit card
 - Average of 3.7 installments per credit card transaction
 - Payment method has no significant effect on review scores
 
-**Delivery — Key Insight**
+**Delivery - Key Insight**
 - On-time delivery rate: 93.2%
 - On-time orders average 4.3 stars
 - Late orders average 2.3 stars
-- A 2-star gap consistent across all states and years — delivery speed is the strongest driver of customer satisfaction
+- A 2-star gap consistent across all states and years. Delivery speed is the strongest driver of customer satisfaction.
 
 ---
 
 ## Dashboard Pages
 
-**Page 1 — Sales Overview**
+**Page 1 - Sales Overview**
 - KPI cards: Total Revenue, Total Orders, AOV, Avg Review Score
 - Monthly revenue and orders trend (line chart)
 - Revenue by product category (bar chart)
@@ -72,15 +72,16 @@ A end-to-end data analytics project analyzing 96,478 orders from a real Brazilia
 <img width="1290" height="731" alt="Sales Dashboard" src="https://github.com/user-attachments/assets/d4c2a5c0-c10a-42e6-9aa9-9295deb6ed01" />
 
 
-**Page 2 — Delivery and Satisfaction**
+---
+
+
+**Page 2 - Delivery and Satisfaction**
 - KPI cards: On-Time Rate, Avg Delivery Days, YoY Growth, Avg Review Score
-- On-time vs late delivery rating comparison (bar chart — green/red)
+- On-time vs late delivery rating comparison (bar chart, green/red)
 - Delivery days vs review score by state (scatter chart)
 - Delivery status by year with conditional formatting (matrix)
 - Top 10 sellers by revenue (bar chart)
 <img width="1293" height="729" alt="Delivery Dashboard" src="https://github.com/user-attachments/assets/c20f2ad9-2d27-4cd2-97bc-3942d7856e37" />
-
-
 
 ---
 
@@ -104,7 +105,6 @@ Snowflake schema with `olist_order_items` as the central fact table.
 7 relationships across 8 tables managed in pgAdmin and replicated in Power BI.
 <img width="1540" height="1240" alt="ERD_Schema" src="https://github.com/user-attachments/assets/4566c183-f025-491e-88d8-c24a24a9acfc" />
 
-
 ---
 
 ## How to Run
@@ -122,7 +122,7 @@ Snowflake schema with `olist_order_items` as the central fact table.
 ---
 
 ## Notes on Data Quality
-- 2016 data covers only September–December (partial year — excluded from YoY comparisons)
+- 2016 data covers only September to December (partial year, excluded from YoY comparisons)
 - 2018 data ends in August (partial year)
-- ~800 orders have payments but no matching review — handled with IFERROR in Excel and subquery isolation in SQL
+- ~800 orders have payments but no matching review, handled with IFERROR in Excel and subquery isolation in SQL
 - Delivery status calculated using date comparison only (time component excluded for fairness)
