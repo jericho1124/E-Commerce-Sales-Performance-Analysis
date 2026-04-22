@@ -69,6 +69,8 @@ A end-to-end data analytics project analyzing 96,478 orders from a real Brazilia
 - Revenue by product category (bar chart)
 - Orders by Brazilian state (filled map)
 - Payment method breakdown (donut chart)
+<img width="1290" height="731" alt="Sales Dashboard" src="https://github.com/user-attachments/assets/d4c2a5c0-c10a-42e6-9aa9-9295deb6ed01" />
+
 
 **Page 2 — Delivery and Satisfaction**
 - KPI cards: On-Time Rate, Avg Delivery Days, YoY Growth, Avg Review Score
@@ -76,6 +78,9 @@ A end-to-end data analytics project analyzing 96,478 orders from a real Brazilia
 - Delivery days vs review score by state (scatter chart)
 - Delivery status by year with conditional formatting (matrix)
 - Top 10 sellers by revenue (bar chart)
+<img width="1293" height="729" alt="Delivery Dashboard" src="https://github.com/user-attachments/assets/c20f2ad9-2d27-4cd2-97bc-3942d7856e37" />
+
+
 
 ---
 
@@ -97,6 +102,8 @@ A end-to-end data analytics project analyzing 96,478 orders from a real Brazilia
 ## Data Model
 Snowflake schema with `olist_order_items` as the central fact table.
 7 relationships across 8 tables managed in pgAdmin and replicated in Power BI.
+<img width="1540" height="1240" alt="ERD_Schema" src="https://github.com/user-attachments/assets/4566c183-f025-491e-88d8-c24a24a9acfc" />
+
 
 ---
 
