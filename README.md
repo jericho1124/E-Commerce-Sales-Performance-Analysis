@@ -112,7 +112,7 @@ Snowflake schema with `olist_order_items` as the central fact table.
 **SQL**
 1. Install pgAdmin and create a database called `olist`
 2. Import all 9 CSV files as tables
-3. Run `olist_queries.sql` in the Query Tool
+3. Run all SQL queries in the Query Tool
 
 **Power BI**
 1. Open `Olist_Dashboard.pbix` in Power BI Desktop
