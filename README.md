@@ -116,7 +116,7 @@ Snowflake schema with `olist_order_items` as the central fact table.
 3. Run all SQL queries in the Query Tool
 
 **Power BI**
-1. Open `Olist_Dashboard.pbix` in Power BI Desktop
+1. Open `Dashboard.pbix` in Power BI Desktop
 2. Update data source path to your local CSV folder if needed
 3. Refresh data
 
