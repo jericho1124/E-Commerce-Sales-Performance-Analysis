@@ -69,7 +69,8 @@ An end-to-end data analytics project analyzing 96,478 orders from a real Brazili
 - Revenue by product category (bar chart)
 - Orders by Brazilian state (filled map)
 - Payment method breakdown (donut chart)
-<img width="1290" height="731" alt="Sales Dashboard" src="https://github.com/user-attachments/assets/d4c2a5c0-c10a-42e6-9aa9-9295deb6ed01" />
+<img width="1278" height="722" alt="Sales Dashboard" src="https://github.com/user-attachments/assets/8dbaafae-6ac0-46d4-8b31-2ca7ffc249b2" />
+
 
 
 ---
